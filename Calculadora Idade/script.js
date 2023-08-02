@@ -149,7 +149,7 @@ function montarTabela(listaUsuarios) {
     listaUsuarios.forEach(usuario => {
         template += ` <tr>
         <td data-cell="nome">${usuario.nome}</td>
-        <td data-cell="data de nascimento">28/06/1998</td>
+        <td data-cell="data de nascimento">${usuario.dia + '/' + usuario.mes + '/' + usuario.ano}</td>
         <td data-cell="idade">${usuario.quantosAnos}</td>
         <td data-cell="faixa etária">${usuario.idadeEtaria}</td> 
     </tr> `
